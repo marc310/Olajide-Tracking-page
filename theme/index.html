@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../vendor/src/js/jquery.js"></script>
+        <link href="../vendor/src/css/style.css" rel="stylesheet">
+        <script src="../vendor/src/js/bootstrap.js"></script>
+        <script src="../vendor/src/js/popper.js"></script>
+    </head>
+
+    
+    <!-- INICIO DO NAV MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- container nav -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">LOGO Here</a>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <!-- menu começa aqui -->
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+
+              <!-- dropdown menu começa aqui -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Settings
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Language</a>
+                <a class="dropdown-item" href="#">Currency</a>
+                <a class="dropdown-item" href="#">User Area</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Help</a>
+                <a class="dropdown-item" href="#">About</a>
+              </div>
+              </li>
+              <!-- dropdown menu termina aqui -->
+
+              </ul>
+              <!-- fim do menu -->
+
+              <!-- form de busca -->
+              <form class="form-inline my-2 my-lg-0 ml-5">
+                <input class="form-control mr-sm-2" type="search" placeholder="Track Another Code" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <!-- fim do form de busca -->
+              
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- FIM DO NAV MENU -->
+
+<!-- ================================================================================================== -->
+    <body>
+      <!-- INICIO DA BODY TAG -->
+      <div class="container-fluid bg-success">
+        <div class="container p-3">
+          <!-- codigo de rastreamento -->
+          <div class="container-fluid text-white">
+          <h6 id="timeline">MYCFF-09837462823800</h6>
+          </div>
+        </div>
+      </div>
+          
+      <div class="container">
+
+        <div class="container-fluid mt-5">
+          <!-- Content here -->
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <!-- painel do tracking começa aqui -->
+                    
+                <!-- TRACKING TIMELINE -->
+                    <div class="page-header">
+                        <!-- status session -->
+                        
+                        <div class="card text-white bg-success">
+                          <div class="card-header">
+                            <h2 class="card-title"><strong> Delivered </strong></h2>
+                            <h6 class="card-subtitle">Tue, January 30, 2020 at 10:40 AM</h6>
+                            <p class="card-text mb-4">6000 AU</p>
+                          </div>
+
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><strong> From: </strong>Pettaling Jaya, KUL 46200, Malasya</li>
+                              <li class="list-group-item"><strong> To: </strong> Perth, WA 6000, Australia</li>
+                            </ul>
+                            
+                        </div>
+
+                        <!-- status section termina aqui -->
+                    </div>
+                    <ul class="timeline">
+                        
+                        <!-- item timeline tracking inicio aqui -->
+                        <li class="timeline-inverted">
+                        <div class="timeline-badge success"><i class="glyphicon glyphicon-credit-card"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                            <h4 class="timeline-title">Titulo</h4>
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> hora ou previsao</small></p>
+                            </div>
+                            <div class="timeline-body">
+                            <p>descrição</p>
+                            <p>local</p>
+                            </div>
+                        </div>
+                        </li>
+                        <!-- fim do item tracking -->
+
+                        <!-- item timeline tracking inicio aqui -->
+                        <li class="timeline-inverted">
+                        <div class="timeline-badge info"><i class="glyphicon glyphicon-credit-card"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                            <h4 class="timeline-title">Titulo</h4>
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> hora ou previsao</small></p>
+                            </div>
+                            <div class="timeline-body">
+                            <p>descrição</p>
+                            <p>local</p>
+                            </div>
+                        </div>
+                        </li>
+                        <!-- fim do item tracking -->
+                        
+                    </ul>
+                <!-- END OF TRACKING TIMELINE -->
+                <!-- painel do tracking termina aqui -->
+              </div>
+                
+
+              <!-- section menu menu-lateral -->
+                <div class="col-md-4 col-sm-12">
+                  
+                  <div class="card mb-5">
+                    <div class="card-header">
+                      History
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Elemento lateral</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Another code history</li>
+                        <li class="list-group-item">Random code 827381362736</li>
+                        <li class="list-group-item">another code</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="card mb-5">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+                </div>
+              <!-- section menu menu-lateral termina aqui -->
+
+
+          </div>
+        </div>
+        <!-- fim do container -->
+      </div>
+
+    </body>
+</html>
+<!-- FIM -->
