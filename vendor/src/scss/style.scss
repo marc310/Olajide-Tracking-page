@@ -7,6 +7,9 @@ $kindle-fire: 800px;
 //
 // escala de cores do tema
 $verde: #009130;
+$azul: #1f3a93;
+$azul-claro: #22a7f0;
+$vermelho: #d91e18;
 $laranja: #d35400;
 $amarelo-ouro: #f89406;
 $amarelo: #ffcb05;
@@ -22,6 +25,12 @@ $branco: white;
 $theme-colors:(
     "green":$verde,
     "success":$verde,
+    "primary": $azul,
+    "info": $azul-claro,
+    "warning": $amarelo,
+    "danger": $vermelho,
+
+
     "amarelo":$amarelo,
     "cinza":$cinza,
     "cinza-escuro":$cinza-escuro,
@@ -41,6 +50,10 @@ $theme-colors:(
 }
 
 
+//time badge fix
+.timeline-heading > p{
+    margin-bottom: 0!important;
+}
 //list group
 .list-group-item{
     background: transparent!important;
@@ -160,7 +173,7 @@ $theme-colors:(
             }
 
 .timeline-badge.primary {
-    background-color: #2e6da4 !important;
+    background-color: $azul;
 }
 
 .timeline-badge.success {
@@ -172,11 +185,11 @@ $theme-colors:(
 }
 
 .timeline-badge.danger {
-    background-color: #d9534f !important;
+    background-color: $vermelho;
 }
 
 .timeline-badge.info {
-    background-color: #5bc0de !important;
+    background-color: $azul-claro;
 }
 
 .timeline-title {
