@@ -1,9 +1,28 @@
-@media (min-width: 767px) {
-  .navbar-brand.abs {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center; } }
+@charset "UTF-8";
+/************************************************************************************
+*************************************************************************************
+//
+//  CodeX
+//  Author: Marcelo Motta
+//  Contact: marcelomotta@outlook.com.br
+//  http://www.marcelomotta.com
+//
+//
+*************************************************************************************
+*
+*       C O D E X    S T Y L E S H E E T   C O M P O N E N T S   T H E M E
+*
+*************************************************************************************
+//
+//
+//  Especificações adicionais no Readme.md
+//  Utilização da biblioteca bootstrap e jquery
+//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
+//
+//
+************************************************************************************/
+.navbar {
+  z-index: 9999; }
 
 .timeline-heading > p {
   margin-bottom: 0 !important; }
@@ -24,7 +43,8 @@
   width: 3px;
   background-color: #eeeeee;
   left: 3%;
-  margin-left: -1.5px; }
+  margin-left: -1.5px;
+  z-index: -1; }
 
 .timeline > li {
   margin-bottom: 20px;
@@ -54,7 +74,8 @@
   padding: 20px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  transition: box-shadow .3s; }
 
 .timeline > li > .timeline-panel:before {
   position: absolute;
@@ -77,6 +98,12 @@
   border-right: 0 solid #fff;
   border-bottom: 14px solid transparent;
   content: " "; }
+
+.sombra {
+  transition: box-shadow .3s; }
+
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
 
 .timeline > li > .timeline-badge {
   color: #fff;
@@ -163,6 +190,27 @@
 @media (max-width: 800px) {
   .timeline > li > .timeline-panel {
     width: 86%; } }
+
+.faixa-atividade {
+  padding: 15px; }
+
+#idTrack {
+  margin-bottom: 5px; }
+
+.card-header > h6 > button {
+  text-align: left;
+  padding: 0 !important;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.card-header > h6 > .btn-link {
+  color: #1e232d; }
+
+.card-header > h6 > button:focus {
+  font-weight: 600; }
+
+.card-header > h6 > button:hover, .card-header > h6 > button:focus {
+  text-decoration: none !important; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
