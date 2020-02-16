@@ -22,12 +22,6 @@
 //
 ************************************************************************************/
 //
-//especificações adicionais responsivos
-//breakpoints
-$mobile: 375px;
-$tablet: 767px;
-$kindle-fire: 800px;
-//
 //
 // escala de cores do tema
 $verde: #009130;
@@ -53,6 +47,7 @@ $theme-colors:(
     "info": $azul-claro,
     "warning": $amarelo,
     "danger": $vermelho,
+    "secondary": $cinza,
 
 
     "amarelo":$amarelo,
@@ -61,16 +56,17 @@ $theme-colors:(
     "cinza-claro":$cinza-claro,
     "cinza-smoke":$cinza-smoke,
 );
-
-
+//
+//
 //navbar correção na sobreposição do dropdown
 .navbar{
     z-index: 9999;
 }
+//
 
 //time badge fix
-.timeline-heading > p{
-    margin-bottom: 0!important;
+.timeline-heading p{
+    margin-bottom: 5px;
 }
 //list group
 .list-group-item{
@@ -90,11 +86,27 @@ position: absolute;
 content: " ";
 width: 3px;
 background-color: #eeeeee;
-left: 3%;
+left: 18.3%;
 margin-left: -1.5px;
 z-index: -1;
 }
-
+//
+.timeline:after{
+    
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $cinza-claro;
+    left: 17.3%;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+    bottom:0;
+    
+}
+//
 .timeline > li {
 margin-bottom: 20px;
 position: relative;
@@ -120,8 +132,51 @@ display: table;
 clear: both;
 }
 
+//descrição do transito
+h6 > small {
+    margin-left: 10px;
+}
+//
+.timeline-heading{
+    color:$cinza;
+}
+//descrição de tempo da entrega no timeline
+.timeline-time{
+margin-top:28px;
+width: 17%;
+color:$cinza;
+}
+.timeline-time h6{
+    margin-bottom: 0!important;
+    font-size: 0.8rem;
+}
+.timeline-time p{
+    font-size: 0.9rem;
+}
+//
+//cor status da data do timeline
+.timeline-time.success{
+color: $verde!important; 
+} 
+.timeline-time.danger{
+color: $vermelho!important;
+
+} 
+.timeline-time.warning{
+color: $amarelo!important;
+
+} 
+.timeline-time.secondary{
+color: $cinza!important;
+
+} 
+
+.timeline-heading > .badge {
+    margin-top:2px;
+}
+
 .timeline > li > .timeline-panel {
-width: 90%;
+width: 76%;
 float: left;
 border: 1px solid #d4d4d4;
 border-radius: 0.25rem; //mesmo valor padrao do bootstrap
@@ -135,7 +190,7 @@ transition: box-shadow .3s;
 
 .timeline > li > .timeline-panel:before {
 position: absolute;
-top: 26px;
+top: 23px;
 right: -15px;
 display: inline-block;
 border-top: 15px solid transparent;
@@ -147,7 +202,7 @@ content: " ";
 
 .timeline > li > .timeline-panel:after {
 position: absolute;
-top: 27px;
+top: 24px;
 right: -14px;
 display: inline-block;
 border-top: 14px solid transparent;
@@ -167,14 +222,14 @@ box-shadow: 4px 6px 25px rgba(36,36,36,.3);
 
 .timeline > li > .timeline-badge {
 color: #fff;
-width: 50px;
-height: 50px;
-line-height: 50px;
-font-size: 1.4em;
+width: 23px;
+height: 23px;
+line-height: 23px;
+font-size: 0.8em;
 text-align: center;
 position: absolute;
-top: 16px;
-left: 3%;
+top: 26px;
+left: 20%;
 margin-left: -25px;
 z-index: 100;
 border-top-right-radius: 50%;
@@ -222,7 +277,8 @@ float: right;
 }
 
 .timeline-title {
-    margin-top: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
     color: inherit;
 }
 
@@ -235,22 +291,89 @@ float: right;
         margin-top: 5px;
     }
 
-@media (max-width: $tablet) {
 
+//
+//especificações adicionais responsivos
+//breakpoints
+$mobile: 413px;
+$mobilePlus: 743px;
+$tablet: 767px;
+$kindle-fire: 800px;
+//
+
+
+// tablet grande 800px
+@media (max-width: $kindle-fire) {
+    .timeline:after{
+        left: 16.5%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 75%;
+    }
+    .timeline > li > .timeline-badge{
+        left:21.5%;
+    }
+}
+
+// tablet 769
+@media (max-width: $tablet) {
+   
     ul.timeline:before {
-        left: 25px;
+        left: 19%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 70%;
+    }
+    .timeline > li > .timeline-badge{
+        left:22%;
+    }
+}
+
+// mobile plus
+@media (max-width: $mobilePlus) {
+    //menu lateral
+    #menu-lateral > .card{
+        margin-top:40px;
+    }
+    .timeline:after{
+        left: 19%;
+    }
+    ul.timeline:before {
+        left: 21%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 70%;
+    }
+    .timeline > li > .timeline-badge{
+        left:25%;
+    }
+}
+
+// mobile 414
+@media (max-width: $mobile) {
+    .timeline-heading > .float-right{
+        float:none!important;
+    }
+    .timeline:after{
+        left: 23.5%;
+    }
+    ul.timeline:before {
+        left: 26.5%;
+    }
+    ul.timeline > li > .timeline-time{
+        width: 25%;
     }
 
     ul.timeline > li > .timeline-panel {
-        width: calc(100% - 70px);
-        width: -moz-calc(100% - 70px);
-        width: -webkit-calc(100% - 70px);
+        width: calc(100% - 110px);
+        width: -moz-calc(100% - 110px);
+        width: -webkit-calc(100% - 110px);
     }
 
     ul.timeline > li > .timeline-badge {
-        left: 0;
+        left:23%;
         margin-left: 0;
-        top: 16px;
+        top: 27px;
     }
 
     ul.timeline > li > .timeline-panel {
@@ -272,11 +395,6 @@ float: right;
     }
 }
 
-@media (max-width: $kindle-fire) {
-    .timeline > li > .timeline-panel{
-        width: 86%;
-    }
-}
 
 //faixa de atividade
 .faixa-atividade{
