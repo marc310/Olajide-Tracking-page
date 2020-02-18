@@ -1,0 +1,227 @@
+
+//time badge fix
+.timeline-heading p{
+    margin-bottom: 5px;
+}
+//list group
+.list-group-item{
+    background: transparent!important;
+}
+//timeline style
+.timeline {
+list-style: none;
+padding: 20px 0 20px;
+position: relative;
+}
+
+.timeline:before {
+top: 0;
+bottom: 0;
+position: absolute;
+content: " ";
+width: 3px;
+background-color: #eeeeee;
+left: 18.3%;
+margin-left: -1.5px;
+z-index: -1;
+}
+//
+.timeline:after{
+    
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $cinza-claro;
+    left: 17.3%;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+    bottom:0;
+    
+}
+//
+.timeline > li {
+margin-bottom: 20px;
+position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+content: " ";
+display: table;
+}
+
+.timeline > li:after {
+clear: both;
+}
+
+//descrição do transito
+h6 > small {
+    margin-left: 10px;
+}
+//
+.timeline-heading{
+    color:$cinza;
+}
+//descrição de tempo da entrega no timeline
+.timeline-time{
+margin-top:28px;
+width: 17%;
+color:$cinza;
+}
+.timeline-time h6{
+    margin-bottom: 0!important;
+    font-size: 0.8rem;
+}
+.timeline-time p{
+    font-size: 0.9rem;
+}
+//
+//cor status da data do timeline
+.timeline-time.success{
+color: $verde!important; 
+} 
+.timeline-time.danger{
+color: $vermelho!important;
+
+} 
+.timeline-time.warning{
+color: $amarelo!important;
+
+} 
+.timeline-time.secondary{
+color: $cinza!important;
+
+} 
+
+.timeline-heading > .badge {
+    margin-top:2px;
+    margin-right: 5px;
+}
+
+.timeline > li > .timeline-panel {
+width: 76%;
+float: left;
+border: 1px solid #d4d4d4;
+border-radius: 0.25rem; //mesmo valor padrao do bootstrap
+padding: 20px;
+position: relative;
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+transition: box-shadow .3s;
+
+}
+
+.timeline > li > .timeline-panel:before {
+position: absolute;
+top: 23px;
+right: -15px;
+display: inline-block;
+border-top: 15px solid transparent;
+border-left: 15px solid #ccc;
+border-right: 0 solid #ccc;
+border-bottom: 15px solid transparent;
+content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+position: absolute;
+top: 24px;
+right: -14px;
+display: inline-block;
+border-top: 14px solid transparent;
+border-left: 14px solid #fff;
+border-right: 0 solid #fff;
+border-bottom: 14px solid transparent;
+content: " ";
+}
+
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+    top: 26px;
+    left: 20%;
+    margin-left: -25px;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    }
+    
+    .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    }
+    
+    .timeline > li.timeline-inverted > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    
+    .timeline > li.timeline-inverted > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    
+    .timeline-badge.primary {
+        background-color: $azul;
+    }
+    
+    .timeline-badge.success {
+        background-color: $verde;
+    }
+    
+    .timeline-badge.warning {
+        background-color: $amarelo;
+    }
+    
+    .timeline-badge.danger {
+        background-color: $vermelho;
+    }
+    
+    .timeline-badge.info {
+        background-color: $azul-claro;
+    }
+    
+    .timeline-title {
+        margin-top: 5px;
+        margin-bottom: 0;
+        color: inherit;
+    }
+
+    .timeline-title .text-muted {
+        margin-left:10px;
+      }
+    
+    .timeline-body > p,
+    .timeline-body > ul {
+        margin-bottom: 0;
+    }
+    
+        .timeline-body > p + p {
+            margin-top: 5px;
+        }
+    
+    

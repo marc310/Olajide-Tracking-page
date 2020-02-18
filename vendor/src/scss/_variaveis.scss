@@ -1,0 +1,59 @@
+/**************************************************************************************
+*
+*       C O D E X    V A R I Á V E I S    S T Y L E S H E E T
+*
+*************************************************************************************
+//
+//
+//  Especificações adicionais no Readme.md
+//  Utilização da biblioteca bootstrap e jquery
+//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
+//
+//
+************************************************************************************/
+//
+//
+// escala de cores do tema
+$verde: #009130;
+$azul: #1f3a93;
+$azul-claro: #22a7f0;
+$vermelho: #d91e18;
+$laranja: #d35400;
+$amarelo-ouro: #f89406;
+$amarelo: #ffcb05;
+$preto: #080401;
+$cinza-mais-escuro: #1e232d;
+$cinza-escuro: #282d37;
+$cinza: #646e7d;
+$cinza-claro: #dadfe1;
+$cinza-smoke: #f2f2f3;
+$branco: white;
+//
+// cores do tema
+$theme-colors:(
+    "green":$verde,
+    "success":$verde,
+    "primary": $azul,
+    "info": $azul-claro,
+    "warning": $amarelo,
+    "danger": $vermelho,
+    "secondary": $cinza,
+
+
+    "amarelo":$amarelo,
+    "cinza":$cinza,
+    "cinza-escuro":$cinza-escuro,
+    "cinza-claro":$cinza-claro,
+    "cinza-smoke":$cinza-smoke,
+);
+//
+
+
+//resoluções
+//especificações adicionais responsivos
+//breakpoints
+$mobile: 413px;
+$mobilePlus: 743px;
+$tablet: 767px;
+$kindle-fire: 800px;
+//

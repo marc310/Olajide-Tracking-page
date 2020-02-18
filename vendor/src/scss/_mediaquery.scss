@@ -1,0 +1,94 @@
+
+// MEDIA QUERY
+// tablet grande 800px
+@media (max-width: $kindle-fire) {
+    .timeline:after{
+        left: 16.5%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 75%;
+    }
+    .timeline > li > .timeline-badge{
+        left:21.5%;
+    }
+}
+
+// tablet 769
+@media (max-width: $tablet) {
+   
+    ul.timeline:before {
+        left: 19%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 70%;
+    }
+    .timeline > li > .timeline-badge{
+        left:22%;
+    }
+}
+
+// mobile plus
+@media (max-width: $mobilePlus) {
+    //menu lateral
+    #menu-lateral > .card{
+        margin-top:40px;
+    }
+    .timeline:after{
+        left: 19%;
+    }
+    ul.timeline:before {
+        left: 21%;
+    }
+    .timeline > li > .timeline-panel{
+        width: 70%;
+    }
+    .timeline > li > .timeline-badge{
+        left:25%;
+    }
+}
+
+// mobile 414
+@media (max-width: $mobile) {
+    .timeline-heading > .float-right{
+        float:none!important;
+    }
+    .timeline:after{
+        left: 23.5%;
+    }
+    ul.timeline:before {
+        left: 26.5%;
+    }
+    ul.timeline > li > .timeline-time{
+        width: 25%;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 110px);
+        width: -moz-calc(100% - 110px);
+        width: -webkit-calc(100% - 110px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left:23%;
+        margin-left: 0;
+        top: 27px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}

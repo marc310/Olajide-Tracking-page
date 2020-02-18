@@ -20,10 +20,21 @@
 //  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 //
 //
+//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 ************************************************************************************/
-.navbar {
-  z-index: 9999; }
-
+/**************************************************************************************
+*
+*       C O D E X    V A R I Á V E I S    S T Y L E S H E E T
+*
+*************************************************************************************
+//
+//
+//  Especificações adicionais no Readme.md
+//  Utilização da biblioteca bootstrap e jquery
+//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
+//
+//
+************************************************************************************/
 .timeline-heading p {
   margin-bottom: 5px; }
 
@@ -110,7 +121,8 @@ h6 > small {
   color: #646e7d !important; }
 
 .timeline-heading > .badge {
-  margin-top: 2px; }
+  margin-top: 2px;
+  margin-right: 5px; }
 
 .timeline > li > .timeline-panel {
   width: 76%;
@@ -144,12 +156,6 @@ h6 > small {
   border-right: 0 solid #fff;
   border-bottom: 14px solid transparent;
   content: " "; }
-
-.sombra {
-  transition: box-shadow .3s; }
-
-.sombra:hover, .timeline > li > .timeline-panel:hover {
-  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
 
 .timeline > li > .timeline-badge {
   color: #fff;
@@ -202,6 +208,9 @@ h6 > small {
   margin-top: 5px;
   margin-bottom: 0;
   color: inherit; }
+
+.timeline-title .text-muted {
+  margin-left: 10px; }
 
 .timeline-body > p,
 .timeline-body > ul {
@@ -267,6 +276,15 @@ h6 > small {
     border-right-width: 14px;
     left: -14px;
     right: auto; } }
+
+.navbar {
+  z-index: 9999; }
+
+.sombra {
+  transition: box-shadow .3s; }
+
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
 
 .faixa-atividade {
   padding: 15px; }
