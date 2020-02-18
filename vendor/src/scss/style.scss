@@ -22,11 +22,10 @@
 //
 //  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 ************************************************************************************/
-@import "_variaveis";
-
-@import "_timeline";
-@import "_mediaquery";
-
+//
+//
+@import "variaveis";
+@import "timeline";
 //
 //
 //navbar correção na sobreposição do dropdown
@@ -66,7 +65,8 @@ box-shadow: 4px 6px 25px rgba(36,36,36,.3);
     text-decoration: none!important;
 }
 //
-//
+// regras responsivas
+@import "mediaquery";
 //
 //
 // importando o bootstrap

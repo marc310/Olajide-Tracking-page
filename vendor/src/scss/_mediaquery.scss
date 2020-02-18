@@ -21,6 +21,7 @@
     }
     .timeline > li > .timeline-panel{
         width: 70%;
+        margin-bottom: 3%;
     }
     .timeline > li > .timeline-badge{
         left:22%;
@@ -79,6 +80,7 @@
     }
 
     ul.timeline > li > .timeline-panel:before {
+        top:22px;
         border-left-width: 0;
         border-right-width: 15px;
         left: -15px;
@@ -86,6 +88,7 @@
     }
 
     ul.timeline > li > .timeline-panel:after {
+        top:23px;
         border-left-width: 0;
         border-right-width: 14px;
         left: -14px;
