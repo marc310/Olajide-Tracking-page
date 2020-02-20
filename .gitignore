@@ -1,6 +1,6 @@
-vendor/node_modules/*
+node_modules/*
 
 *.zip
 *.rar
-vendor/*.zip
-vendor/*.rar
+template/*.zip
+template/*.rar

@@ -17,10 +17,8 @@
 //
 //  Especificações adicionais no Readme.md
 //  Utilização da biblioteca bootstrap e jquery
-//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 //
 //
-//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 ************************************************************************************/
 /**************************************************************************************
 *
@@ -312,6 +310,7 @@ h6 > small {
     left: -14px;
     right: auto; } }
 
+/* BOOTSTRAP */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
