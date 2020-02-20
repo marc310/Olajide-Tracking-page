@@ -1,8 +1,9 @@
-//
+// 
 @import "variaveis";
 @import "mixins";
 //
-
+//
+// estilos de layout
 /* FRAGMENTOS DE ESTILIZAÇÃO DO ESTILO GERAL */
 @import "layout/fraction";
 
@@ -11,3 +12,12 @@
 
 /* CARD */
 @import "layout/card";
+
+
+
+
+// regras responsivas
+// !important: manter abaixo dos @imports de estilo
+/* MEDIA QUERY'S */
+@import "mediaquery";
+//

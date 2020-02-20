@@ -250,6 +250,7 @@ h6 > small {
 .card-header > h6 > button:hover, .card-header > h6 > button:focus {
   text-decoration: none !important; }
 
+/* MEDIA QUERY'S */
 @media (max-width: 800px) {
   .timeline:after {
     left: 16.5%; }
