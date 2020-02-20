@@ -35,6 +35,23 @@
 //
 //
 ************************************************************************************/
+/* FRAGMENTOS DE ESTILIZAÇÃO DO ESTILO GERAL */
+.navbar {
+  z-index: 9999; }
+
+.sombra {
+  transition: box-shadow .3s; }
+
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
+
+.faixa-atividade {
+  padding: 15px; }
+
+#idTrack {
+  margin-bottom: 5px; }
+
+/* TRACKING TIMELINE */
 .timeline-heading p {
   margin-bottom: 5px; }
 
@@ -217,21 +234,7 @@ h6 > small {
 .timeline-body > p + p {
   margin-top: 5px; }
 
-.navbar {
-  z-index: 9999; }
-
-.sombra {
-  transition: box-shadow .3s; }
-
-.sombra:hover, .timeline > li > .timeline-panel:hover {
-  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
-
-.faixa-atividade {
-  padding: 15px; }
-
-#idTrack {
-  margin-bottom: 5px; }
-
+/* CARD */
 .card-header > h6 > button {
   text-align: left;
   padding: 0 !important;

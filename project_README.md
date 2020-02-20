@@ -3,11 +3,12 @@ A Tracking Page Theme in HTML for a courier Company
 
 # Gitignore
 >ignorando pastas html e node_modules
+>ignorando qualquer arquivo .zip ou .rar na pasta vendor
 
 # Theming
 html theme files
->theme/
+>template/
 
 # css file
-> vendor/src/css
+> template/src/css
 

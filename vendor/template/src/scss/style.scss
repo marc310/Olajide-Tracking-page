@@ -23,51 +23,10 @@
 //  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
 ************************************************************************************/
 //
-//
-@import "variaveis";
-@import "timeline";
-//
-//
-//navbar correção na sobreposição do dropdown
-.navbar{
-    z-index: 9999;
-}
-//
-// sombras em movimento
-.sombra {
-transition: box-shadow .3s;
-}
-.sombra:hover, .timeline > li > .timeline-panel:hover {
-box-shadow: 4px 6px 25px rgba(36,36,36,.3);
-}
-
-//faixa de atividade
-.faixa-atividade{
-    padding: 15px;
-}
-#idTrack{
-    margin-bottom: 5px;
-}
-//ajuste no card de faq
-.card-header > h6 > button{
-    text-align:left;
-    padding:0!important;
-    margin-top:5px;
-    margin-bottom:5px;
-}
-.card-header > h6 > .btn-link{
-    color:$cinza-mais-escuro;
-}
-.card-header > h6 > button:focus{
-    font-weight: 600;
-}
-.card-header > h6 > button:hover, .card-header > h6 > button:focus{
-    text-decoration: none!important;
-}
+@import "app";
 //
 // regras responsivas
 @import "mediaquery";
-//
 //
 // importando o bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

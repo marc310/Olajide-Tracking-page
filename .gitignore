@@ -1,2 +1,6 @@
 vendor/node_modules/*
-html/*
+
+*.zip
+*.rar
+vendor/*.zip
+vendor/*.rar

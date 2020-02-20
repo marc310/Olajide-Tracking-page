@@ -1,0 +1,19 @@
+//ajuste no card de faq
+.card-header{
+    
+}
+.card-header > h6 > button{
+    text-align:left;
+    padding:0!important;
+    margin-top:5px;
+    margin-bottom:5px; 
+}
+.card-header > h6 > .btn-link{
+    color:$cinza-mais-escuro;
+}
+.card-header > h6 > button:focus{
+    font-weight: 600;
+}
+.card-header > h6 > button:hover, .card-header > h6 > button:focus{
+    text-decoration: none!important;
+}

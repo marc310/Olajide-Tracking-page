@@ -1,0 +1,22 @@
+//
+//navbar correção na sobreposição do dropdown
+.navbar{
+    z-index: 9999;
+}
+//
+// sombras em movimento
+.sombra {
+transition: box-shadow .3s;
+}
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+box-shadow: 4px 6px 25px rgba(36,36,36,.3);
+}
+//
+//faixa de atividade
+.faixa-atividade{
+    padding: 15px;
+}
+//
+#idTrack{
+    margin-bottom: 5px;
+}
