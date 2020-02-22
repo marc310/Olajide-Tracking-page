@@ -12,10 +12,8 @@
 list-style: none;
 padding: 20px 0 20px;
 position: relative;
-.timeline > li > .timeline-panel:before .success{
+}
 
-}
-}
 
 .timeline:before {
 top: 0;
@@ -91,23 +89,6 @@ color:$cinza;
     font-size: 0.9rem;
 }
 //
-//cor status da data do timeline
-// .timeline-time.success{
-// color: $verde!important; 
-// } 
-// .timeline-time.danger{
-// color: $vermelho!important;
-
-// } 
-// .timeline-time.warning{
-// color: $amarelo!important;
-
-// } 
-// .timeline-time.secondary{
-// color: $cinza!important;
-
-// } 
-
 .timeline-heading > .badge {
     margin-top:2px;
     margin-right: 5px;
@@ -154,45 +135,24 @@ border-bottom: 14px solid transparent;
 content: " ";
 }
 
-
 //
-/* TIMELINE SUCCESS */
+//
+//
+/* TIMELINE STATUS */
 .timeline-inverted.success{
-    @include status-panel($verde);
+    @include status-tracking($verde);
 }
-
-/* TIMELINE WARNING */
-// TODO.. ajustar a transição
-.timeline-inverted.enroute{
-    opacity: 0.8;
-    @include status-panel($cinza);
-    @include transition(background-color 1s .5s, color 2s);
-
-    }
-.timeline-inverted.enroute:hover{
-    @include status-panel($azul-claro);
-    opacity: 1;
+.timeline-inverted.info{
+    @include status-tracking($azul-claro);
 }
-
-// .timeline-inverted.enroute{
-//     //verifica se é o primeiro item
-//     @include status-panel($cinza);
-//     }
-//     // se nao adiciona o estilo somente onhover 
-//     &:hover{
-//     @include status-panel($info);
-// }
-// .timeline-inverted.enroute{
-//     @include status-panel($info);
-// }
-
-// .timeline-inverted.warning{
-//     @include status-panel($amarelo);
-// }
-
-// .timeline-inverted.error{
-//     @include status-panel($vermelho);
-// }
+//
+.timeline-inverted.warning{
+    @include status-tracking($amarelo);
+}
+//
+.timeline-inverted.danger{
+    @include status-tracking($vermelho);
+}
 //
 //
 
@@ -246,8 +206,8 @@ content: " ";
         margin-bottom: 0;
     }
     
-        .timeline-body > p + p {
-            margin-top: 5px;
-        }
-    
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+
     

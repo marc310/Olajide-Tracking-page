@@ -12,3 +12,12 @@
 #idTrack{
     margin-bottom: 5px;
 }
+//
+.sombra {
+    @include shadow-m;
+  }
+//
+  .sombra:hover, .timeline > li > .timeline-panel:hover {
+    @include shadow-m;
+  }
+//
