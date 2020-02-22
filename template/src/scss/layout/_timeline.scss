@@ -12,6 +12,9 @@
 list-style: none;
 padding: 20px 0 20px;
 position: relative;
+.timeline > li > .timeline-panel:before .success{
+
+}
 }
 
 .timeline:before {
@@ -89,26 +92,33 @@ color:$cinza;
 }
 //
 //cor status da data do timeline
-.timeline-time.success{
-color: $verde!important; 
-} 
-.timeline-time.danger{
-color: $vermelho!important;
+// .timeline-time.success{
+// color: $verde!important; 
+// } 
+// .timeline-time.danger{
+// color: $vermelho!important;
 
-} 
-.timeline-time.warning{
-color: $amarelo!important;
+// } 
+// .timeline-time.warning{
+// color: $amarelo!important;
 
-} 
-.timeline-time.secondary{
-color: $cinza!important;
+// } 
+// .timeline-time.secondary{
+// color: $cinza!important;
 
-} 
+// } 
 
 .timeline-heading > .badge {
     margin-top:2px;
     margin-right: 5px;
 }
+
+.timeline-badge {
+    background-color: $cinza; }
+
+.timeline-panel > .timeline-heading > .badge-status {
+    border: 1px solid $cinza; }
+
 
 .timeline > li > .timeline-panel {
 width: 76%;
@@ -117,10 +127,7 @@ border: 1px solid #d4d4d4;
 border-radius: 0.25rem; //mesmo valor padrao do bootstrap
 padding: 10px;
 position: relative;
--webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-transition: box-shadow .3s;
-
+@include shadow-s;
 }
 
 .timeline > li > .timeline-panel:before {
@@ -147,6 +154,26 @@ border-bottom: 14px solid transparent;
 content: " ";
 }
 
+
+//
+/* TIMELINE SUCCESS */
+.timeline-inverted.success{
+    @include status-panel($verde);
+}
+
+// .timeline-inverted.enroute{
+//     @include status-panel($info);
+// }
+
+// .timeline-inverted.warning{
+//     @include status-panel($amarelo);
+// }
+
+// .timeline-inverted.error{
+//     @include status-panel($vermelho);
+// }
+//
+//
 
 .timeline > li > .timeline-badge {
     color: #fff;
@@ -182,26 +209,6 @@ content: " ";
         border-right-width: 14px;
         left: -14px;
         right: auto;
-    }
-    
-    .timeline-badge.primary {
-        background-color: $azul;
-    }
-    
-    .timeline-badge.success {
-        background-color: $verde;
-    }
-    
-    .timeline-badge.warning {
-        background-color: $amarelo;
-    }
-    
-    .timeline-badge.danger {
-        background-color: $vermelho;
-    }
-    
-    .timeline-badge.info {
-        background-color: $azul-claro;
     }
     
     .timeline-title {

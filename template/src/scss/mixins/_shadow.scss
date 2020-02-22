@@ -1,0 +1,23 @@
+/* SHADOW MIXINS */
+
+@mixin shadow-m{
+  transition: box-shadow .3s;
+  &:hover{
+    box-shadow: 4px 6px 25px rgba(36,36,36,.3);
+  }
+}
+//
+
+@mixin shadow-s{
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  transition: box-shadow .3s;
+}
+//
+.sombra {
+  @include shadow-m;
+}
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+  @include shadow-m;
+}
+//

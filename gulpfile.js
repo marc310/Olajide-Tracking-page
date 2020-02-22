@@ -10,7 +10,11 @@ gulp.task('sass', gulp.series(function(){
 
 // sass observa
 gulp.task('watch', gulp.series(function(){
-    gulp.watch(['node_modules/bootstrap/scss/*.scss', 'template/src/scss/*.scss'], gulp.parallel(['sass']));
+    gulp.watch([
+        'node_modules/bootstrap/scss/*.scss', 
+        'template/src/scss/*.scss', 
+        'template/src/scss/*/*.scss',
+    ], gulp.parallel(['sass']));
 }));
 
 //tarefa default para executar as tarefas anteriores

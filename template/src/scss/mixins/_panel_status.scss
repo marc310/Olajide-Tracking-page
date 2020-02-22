@@ -1,0 +1,49 @@
+@mixin status-panel($cor){
+
+    .timeline-panel{
+        border: 1px solid $cor!important;
+        }
+        .timeline-panel:before{
+            border-right: 15px solid $cor!important;
+        }
+        .timeline-panel:after{
+            border-right: 15px solid $cor!important;
+            left:-15px!important;
+        }
+        .timeline-panel > .timeline-heading > h6 > strong{
+            color:$cor;
+        }
+
+        .timeline-badge.b-status {
+            background-color: $cor!important;
+        }
+
+        .timeline-panel > .timeline-heading > .badge-status {
+            color: #fff!important;
+            background-color: $cor!important; }
+        
+        .timeline-time{
+        color: $cor!important; 
+        } 
+}
+
+
+// .timeline-badge.primary {
+//     background-color: $azul;
+// }
+
+// .timeline-badge.success {
+//     background-color: $verde;
+// }
+
+// .timeline-badge.warning {
+//     background-color: $amarelo;
+// }
+
+// .timeline-badge.danger {
+//     background-color: $vermelho;
+// }
+
+// .timeline-badge.info {
+//     background-color: $azul-claro;
+// }

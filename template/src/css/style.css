@@ -33,15 +33,20 @@
 //
 //
 ************************************************************************************/
+/* SHADOW MIXINS */
+.sombra {
+  transition: box-shadow .3s; }
+  .sombra:hover {
+    box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
+
+.sombra:hover, .timeline > li > .timeline-panel:hover {
+  transition: box-shadow .3s; }
+  .sombra:hover:hover, .timeline > li > .timeline-panel:hover:hover {
+    box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
+
 /* FRAGMENTOS DE ESTILIZAÇÃO DO ESTILO GERAL */
 .navbar {
   z-index: 9999; }
-
-.sombra {
-  transition: box-shadow .3s; }
-
-.sombra:hover, .timeline > li > .timeline-panel:hover {
-  box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
 
 .faixa-atividade {
   padding: 15px; }
@@ -122,21 +127,15 @@ h6 > small {
 .timeline-time p {
   font-size: 0.9rem; }
 
-.timeline-time.success {
-  color: #009130 !important; }
-
-.timeline-time.danger {
-  color: #d91e18 !important; }
-
-.timeline-time.warning {
-  color: #ffcb05 !important; }
-
-.timeline-time.secondary {
-  color: #646e7d !important; }
-
 .timeline-heading > .badge {
   margin-top: 2px;
   margin-right: 5px; }
+
+.timeline-badge {
+  background-color: #646e7d; }
+
+.timeline-panel > .timeline-heading > .badge-status {
+  border: 1px solid #646e7d; }
 
 .timeline > li > .timeline-panel {
   width: 76%;
@@ -171,6 +170,30 @@ h6 > small {
   border-bottom: 14px solid transparent;
   content: " "; }
 
+/* TIMELINE SUCCESS */
+.timeline-inverted.success .timeline-panel {
+  border: 1px solid #009130 !important; }
+
+.timeline-inverted.success .timeline-panel:before {
+  border-right: 15px solid #009130 !important; }
+
+.timeline-inverted.success .timeline-panel:after {
+  border-right: 15px solid #009130 !important;
+  left: -15px !important; }
+
+.timeline-inverted.success .timeline-panel > .timeline-heading > h6 > strong {
+  color: #009130; }
+
+.timeline-inverted.success .timeline-badge.b-status {
+  background-color: #009130 !important; }
+
+.timeline-inverted.success .timeline-panel > .timeline-heading > .badge-status {
+  color: #fff !important;
+  background-color: #009130 !important; }
+
+.timeline-inverted.success .timeline-time {
+  color: #009130 !important; }
+
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 23px;
@@ -203,21 +226,6 @@ h6 > small {
   left: -14px;
   right: auto; }
 
-.timeline-badge.primary {
-  background-color: #1f3a93; }
-
-.timeline-badge.success {
-  background-color: #009130; }
-
-.timeline-badge.warning {
-  background-color: #ffcb05; }
-
-.timeline-badge.danger {
-  background-color: #d91e18; }
-
-.timeline-badge.info {
-  background-color: #22a7f0; }
-
 .timeline-title {
   margin-bottom: 0;
   color: inherit; }
@@ -233,6 +241,14 @@ h6 > small {
   margin-top: 5px; }
 
 /* CARD */
+.page-header > .card {
+  transition: box-shadow .3s;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  transition: box-shadow .3s; }
+  .page-header > .card:hover {
+    box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
+
 .card-header > h6 > button {
   text-align: left;
   padding: 0 !important;

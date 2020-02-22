@@ -1,7 +1,9 @@
 //ajuste no card de faq
-.card-header{
-    
+.page-header > .card {
+    @include shadow-m;
+    @include shadow-s;  
 }
+
 .card-header > h6 > button{
     text-align:left;
     padding:0!important;
