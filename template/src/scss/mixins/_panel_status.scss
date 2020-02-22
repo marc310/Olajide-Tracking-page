@@ -1,4 +1,20 @@
+//
+// STATUS PANEL PARA ITENS SECUNDARIOS
+@mixin status-tracking($cor){
 
+    opacity: 0.7;
+    
+    &:hover{
+        opacity: 1;
+        cursor: help;
+        @include status-panel($cor);
+    }
+    &:first-child{
+        opacity: 1;
+        cursor: pointer;
+        @include status-panel($cor);
+    }
+}
 /* TIMELINE STATUS PANEL ATIVO*/
 @mixin status-panel($cor){
 
@@ -28,21 +44,5 @@
     .timeline-time{
     color: $cor!important; 
     } 
-    cursor: help;
 }
 //
-//
-// STATUS PANEL PARA ITENS SECUNDARIOS
-@mixin status-tracking($cor){
-
-    opacity: 0.7;
-    
-    &:hover{
-        opacity: 1;
-        @include status-panel($cor);
-    }
-    &:first-child{
-        opacity: 1;
-        @include status-panel($cor);
-    }
-}

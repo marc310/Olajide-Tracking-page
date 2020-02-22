@@ -137,24 +137,6 @@ content: " ";
 
 //
 //
-//
-/* TIMELINE STATUS */
-.timeline-inverted.success{
-    @include status-tracking($verde);
-}
-.timeline-inverted.info{
-    @include status-tracking($azul-claro);
-}
-//
-.timeline-inverted.warning{
-    @include status-tracking($amarelo);
-}
-//
-.timeline-inverted.danger{
-    @include status-tracking($vermelho);
-}
-//
-//
 
 .timeline > li > .timeline-badge {
     color: #fff;
@@ -211,3 +193,21 @@ content: " ";
     }
 
     
+//
+/* TIMELINE STATUS */
+.timeline-inverted.success{
+    @include status-tracking($verde);
+}
+.timeline-inverted.info{
+    @include status-tracking($azul-claro);
+}
+//
+.timeline-inverted.warning{
+    @include status-tracking($amarelo);
+}
+//
+.timeline-inverted.danger{
+    @include status-tracking($vermelho);
+}
+//
+//

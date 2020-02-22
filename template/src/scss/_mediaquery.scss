@@ -40,6 +40,9 @@
     ul.timeline:before {
         left: 21%;
     }
+    ul.timeline > li > .timeline-time{
+        margin-top:3px;
+    }
     .timeline > li > .timeline-panel{
         width: 70%;
     }
@@ -60,6 +63,7 @@
         left: 26.5%;
     }
     ul.timeline > li > .timeline-time{
+        margin-top:12px;
         width: 25%;
     }
 
