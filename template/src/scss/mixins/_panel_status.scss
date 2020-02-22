@@ -3,28 +3,32 @@
     .timeline-panel{
         border: 1px solid $cor!important;
         }
-        .timeline-panel:before{
+        .timeline-panel:before, .timeline-panel:after{
             border-right: 15px solid $cor!important;
         }
         .timeline-panel:after{
-            border-right: 15px solid $cor!important;
             left:-15px!important;
         }
         .timeline-panel > .timeline-heading > h6 > strong{
             color:$cor;
         }
-
+        //
+        // cor de status do icone
         .timeline-badge.b-status {
             background-color: $cor!important;
         }
-
+        //
+        // cor de status do badge a direita
         .timeline-panel > .timeline-heading > .badge-status {
             color: #fff!important;
-            background-color: $cor!important; }
-        
+            background-color: $cor!important; 
+            border:none;
+        }
+        // cor da fonte do tempo a esquerda
         .timeline-time{
         color: $cor!important; 
         } 
+    cursor: help;
 }
 
 

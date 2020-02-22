@@ -161,6 +161,27 @@ content: " ";
     @include status-panel($verde);
 }
 
+/* TIMELINE WARNING */
+// TODO.. ajustar a transição
+.timeline-inverted.enroute{
+    opacity: 0.8;
+    @include status-panel($cinza);
+    @include transition(background-color 1s .5s, color 2s);
+
+    }
+.timeline-inverted.enroute:hover{
+    @include status-panel($azul-claro);
+    opacity: 1;
+}
+
+// .timeline-inverted.enroute{
+//     //verifica se é o primeiro item
+//     @include status-panel($cinza);
+//     }
+//     // se nao adiciona o estilo somente onhover 
+//     &:hover{
+//     @include status-panel($info);
+// }
 // .timeline-inverted.enroute{
 //     @include status-panel($info);
 // }
