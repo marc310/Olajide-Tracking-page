@@ -38,7 +38,7 @@
     .timeline-panel > .timeline-heading > .badge-status {
         color: #fff!important;
         background-color: $cor!important; 
-        border:none;
+        border: 1px solid $cor!important;
     }
     // cor da fonte do tempo a esquerda
     .timeline-time{

@@ -1,477 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="src/js/jquery.js"></script>
-        <link href="src/css/style.css" rel="stylesheet">
-        <link href="src/css/all.css" rel="stylesheet"> <!-- fontawesome -->
-        <script src="src/js/bootstrap.js"></script>
-        <script src="src/js/popper.js"></script>
-    </head>
 
-    
-    <!-- INICIO DO NAV MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <div class="container-fluid">
-          <!-- container nav -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">LOGO Here</a>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="src/js/jquery.js"></script>
+  <link href="src/css/style.css" rel="stylesheet">
+  <link href="src/css/all.css" rel="stylesheet"> <!-- fontawesome -->
+  <script src="src/js/bootstrap.js"></script>
+  <script src="src/js/popper.js"></script>
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerMenu">
-              <!-- menu começa aqui -->
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="enroute.html">En Route</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-              </li>
+<!-- INICIO DO NAV MENU -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="container-fluid">
+      <!-- container nav -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu"
+        aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">LOGO Here</a>
 
-              <!-- dropdown menu começa aqui -->
-              <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Settings
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Language</a>
-                <a class="dropdown-item" href="#">Currency</a>
-                <a class="dropdown-item" href="#">User Area</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Help</a>
-                <a class="dropdown-item" href="#">About</a>
-              </div>
-              </li>
-              <!-- dropdown menu termina aqui -->
-              </ul>
-              <!-- fim do menu -->
+      <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+        <!-- menu começa aqui -->
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="enroute.html">En Route</a>
+          </li>
 
-              <!-- form de busca -->
-              <form class="form-inline my-2 my-lg-0 ml-5">
-              <input class="form-control mr-sm-2" type="search" placeholder="Track Another Code" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-              <!-- fim do form de busca -->
-             
-          </div>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+
+          <!-- dropdown menu começa aqui -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Settings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Language</a>
+              <a class="dropdown-item" href="#">Currency</a>
+              <a class="dropdown-item" href="#">User Area</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Help</a>
+              <a class="dropdown-item" href="#">About</a>
+            </div>
+          </li>
+          <!-- dropdown menu termina aqui -->
+        </ul>
+        <!-- fim do menu -->
+
+        <!-- form de busca -->
+        <form class="form-inline my-2 my-lg-0 ml-5">
+          <input class="form-control mr-sm-2" type="search" placeholder="Track Another Code" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- fim do form de busca -->
+
       </div>
-    </nav>
-    <!-- FIM DO NAV MENU -->
+    </div>
+  </div>
+</nav>
+<!-- FIM DO NAV MENU -->
 
 <!-- ================================================================================================== -->
 <!-- INICIO DA BODY TAG -->
-    <body>
-      
-      <!-- INICIO DO MENU DE ATIVIDADE -->
-      <div class="container-fluid bg-success sticky-top sombra faixa-atividade">
-        <div class="container">
-          <!-- codigo de rastreamento -->
-          <div class="container-fluid text-white">
-            <h6 id="idTrack"><strong> Activity : </strong> <i class="fas fa-search-location ml-3"></i> MYCFF-09837462823800</h6>
-          </div>
-        </div>
+
+<body>
+
+  <!-- INICIO DO MENU DE ATIVIDADE
+  <div class="container-fluid bg-success sticky-top sombra faixa-atividade">
+    <div class="container">
+       <div class="container-fluid text-white">
+        <h6 id="idTrack"><strong> Activity : </strong> <i class="fas fa-search-location ml-3"></i> MYCFF-09837462823800
+        </h6>
       </div>
-      <!-- FIM DO MENU DE ATIVIDADE -->
-          
-      <div class="container">
-
-        <div class="container-fluid mt-3">
-          <!-- Content here -->
-          <div class="row">
-            <div class="col-md-8 col-sm-12">
-              <!-- painel do tracking começa aqui -->
-                    
-                <!-- TRACKING TIMELINE -->
-                    <div class="page-header">
-                        <!-- STATUS PANEL session -->
-                        
-
-                        <div class="alert alert-info" role="alert">
-                          <strong>Item em Transito</strong> This alert show some information about the tracking.
-                        </div>
-
-
-                        <!-- <div class="card text-white bg-success">
-                          <div class="card-header">
-                            
-                            <h2 class="card-title"><i class="far fa-check-circle"></i> <strong> Delivered </strong></h2>
-                            <h6 class="card-subtitle">Tue, January 30, 2020 at 10:40 AM</h6>
-                            <p class="card-text mb-3">6000 AU</p>
-                          </div>
-
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item"><strong> From: </strong>Pettaling Jaya, KUL 46200, Malasya</li>
-                              <li class="list-group-item"><strong> To: </strong> Perth, WA 6000, Australia</li>
-                            </ul>
-                            
-                        </div> -->
-
-                        <!-- status section termina aqui -->
-                    </div>
-                    <ul class="timeline">
-                        
-                       <!-- item timeline tracking inicio aqui -->
-                        <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-                          <div class="timeline-panel ">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">In Transit</span>
-                              <h6 class="timeline-title"><strong> 6000 AU </strong> 
-                                <small class="text-muted time-badge">Saiu para entrega no Endereço do cliente</small></h6>
-                            </div>
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 8:40 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Tue Feb 13 2019</small></p>
-                          
-                          </div>
-                        </li>
-                        <!-- fim do item tracking -->
-                        
-
-
-<!-- inicio do item track aqui -->
-<li class="timeline-inverted info">
-  <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-  <div class="timeline-panel">
-    <div class="timeline-heading">
-      <span class="badge float-right badge-status">In Transit</span>
-      <h6 class="timeline-title"><strong>Mussum ipsum cacilds</strong></h6>
-      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 
-        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga
-      </small></p>
     </div>
-    <!-- <div class="timeline-body">
-      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-    </div> -->
-  </div>
-  <div class="timeline-time">
-    <h6><strong> 12:57 AM </strong></h6>
-    <p><small class="text-muted time-badge">Tue Feb 23 2020</small></p>
-  </div>
-</li>
-<!-- final do item track aqui -->
+  </div> -->
+  <!-- FIM DO MENU DE ATIVIDADE -->
 
-<!-- inicio do item track aqui -->
-<li class="timeline-inverted info">
-  <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-  <div class="timeline-panel">
-    <div class="timeline-heading">
-      <span class="badge float-right badge-status">In Transit</span>
-      <h6 class="timeline-title"><strong>Mussum ipsum cacilds</strong></h6>
-      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 
-        Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga
-      </small></p>
-    </div>
-    <!-- <div class="timeline-body">
-      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-    </div> -->
-  </div>
-  <div class="timeline-time">
-    <h6><strong> 12:57 AM </strong></h6>
-    <p><small class="text-muted time-badge">Tue Feb 23 2020</small></p>
-  </div>
-</li>
-<!-- final do item track aqui -->
+  <div class="container">
+    <div class="container-fluid mt-3">
+      <!-- Content here -->
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <!-- painel do tracking começa aqui -->
+          <div class="page-header">
+            <!-- STATUS PANEL session -->
+            
+            <div class="alert alert-secondary" role="alert">
+              <h6 id="idTrack"><strong> Activity : </strong> <i class="fas fa-search-location ml-3"></i> MYCFF-09837462823800
+            </div>
 
-<!-- inicio do item track aqui -->
-                        <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-                          <div class="timeline-panel">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">In Transit</span>
-                              <h6 class="timeline-title"><strong>Mussum ipsum cacilds</strong></h6>
-                              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 
-                                Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga
-                              </small></p>
-                            </div>
-                            <!-- <div class="timeline-body">
-                              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                            </div> -->
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 12:57 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Tue Feb 23 2020</small></p>
-                          </div>
-                        </li>
-                        <!-- final do item track aqui -->
+            <div class="card text-white bg-info">
+              <div class="card-header">
 
+                <h2 class="card-title"><i class="fas fa-shipping-fast"></i> <strong> On Delivery Route </strong></h2>
+                <p class="card-subtitle"><small> Processed  </small></p>
+                <p class="card-text mb-2"> Tue, January 30, 2020 at 10:40 AM </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <!-- item timeline tracking inicio aqui -->
-                        <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-                          <div class="timeline-panel ">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">In Transit</span>
-                              <h6 class="timeline-title"><strong> 6000 AU </strong> 
-                                <small class="text-muted time-badge">
-                                  Mauris viverra at ex et ullamcorper. Sed auctor non ante viverra dapibus. Mauris in feugiat dolor. Curabitur et nunc fermentum, sodales sem sit amet, iaculis dolor.
-                                </small></h6>
-                            </div>
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 8:40 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Tue Feb 13 2019</small></p>
-                          
-                          </div>
-                        </li>
-                        <!-- fim do item tracking -->
-
-                         <!-- item timeline tracking inicio aqui -->
-                         <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
-                          <div class="timeline-panel ">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">In Transit</span>
-                              <h6 class="timeline-title"><strong> 6000 AU </strong> 
-                                <small class="text-muted time-badge">Saiu para entrega no Endereço do cliente</small></h6>
-                            </div>
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 8:40 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Tue Feb 13 2019</small></p>
-                          
-                          </div>
-                        </li>
-                        <!-- fim do item tracking -->
-
-                        <!-- item timeline tracking inicio aqui --> 
-                        <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-shipping-fast"></i></div>
-                          <div class="timeline-panel">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">In Transit</span>
-                              <h6 class="timeline-title"><strong> Singapura </strong> 
-                                <small class="text-muted time-badge">Departed from local distribuitioin center</small></h6>
-                            </div>
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 1:34 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Mon Feb 14 2019</small></p>
-                          
-                          </div>
-
-                          
-                        </li>
-                        <!-- fim do item tracking -->
-
-
-                         <!-- item timeline tracking inicio aqui --> 
-                         <li class="timeline-inverted info">
-                          <div class="timeline-badge b-status"><i class="fas fa-box-open"></i></div>
-                          <div class="timeline-panel">
-                            <div class="timeline-heading">
-                              <span class="badge float-right badge-status">Processing Order</span>
-                              <h6 class="timeline-title"><strong> Order Received </strong> 
-                                <small class="text-muted time-badge">Your order has been processed and tracking will be updated soon</small></h6>
-                            </div>
-                          </div>
-                          <div class="timeline-time">
-                            <h6><strong> 8:39 AM </strong></h6>
-                            <p><small class="text-muted time-badge">Mon Feb 13 2019</small></p>
-                          
-                          </div>
-
-                          
-                        </li>
-                        <!-- fim do item tracking -->
-                    </ul>
-                <!-- END OF TRACKING TIMELINE -->
-                <!-- painel do tracking termina aqui -->
               </div>
 
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><small><strong> From: </strong>Pettaling Jaya, KUL 46200, Malasya</small></li>
+                <li class="list-group-item"><small><strong> To: </strong> Perth, WA 6000, Australia</small></li>
+              </ul>
+
+            </div> 
+
+            
+
+            <!-- status section termina aqui -->
+          </div>
 
 
+          <!-- TRACKING TIMELINE -->
+          <ul class="timeline">
 
-              <!-- barra menu menu-lateral -->
-                <div id="menu-lateral" class="col-md-4 col-sm-12">
-                  
-
-                  <div class="card mb-5"> 
-                    <div class="card-header">
-                      <div class="container">
-                        <!-- buttons menu lateral -->
-                        <div class="d-flex justify-content-between">
-                          <button type="button" class="btn btn-outline-secondary">1</button>
-                          <button type="button" class="btn btn-outline-secondary">2</button>
-                          <button type="button" class="btn btn-outline-secondary">3</button>
-                          <button type="button" class="btn btn-outline-secondary">4</button>
-                        </div>
-    
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Elemento lateral</h5>
-                      <p class="card-text">With supporting text description to additional content information.</p>
-                      
-                      <ul class="list-group list-group-flush">
-
-                        <li class="list-group-item">E-commerce <i class="fas fa-info-circle"></i>
-                          <p><small class="text-muted">287765465110023123402 </small></p>
-                        </li>
-
-                        <li class="list-group-item">Customer Confirmation <i class="fas fa-info-circle"></i>
-                          <p><small class="text-muted">MYCFF-09837462823800</small></p>
-                        </li>
-
-                        <li class="list-group-item">Deliver by Postal Provider <i class="fas fa-info-circle"></i>
-                          <p><small class="text-muted">LW7462823800</small></p>
-                        </li>
-
-                        <li class="list-group-item">Weight <i class="fas fa-info-circle"></i>
-                          <p><small class="text-muted">1.16 Lbs</small></p>
-                        </li>
-
-                        <li class="list-group-item">Service <i class="fas fa-info-circle"></i>
-                          <p><small class="text-muted">GM Service Plus</small></p>
-                        </li>
-                        
-
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- fim da sessao um do menu lateral -->
-                  
-                  
-
-
-                  <!-- sessao 3 do menu lateral -->
-                  <div class="card mb-5">
-                    <div class="card-header">
-                      <i class="fas fa-question float-right mt-1"></i> <strong> FAQ </strong>
-                    </div>
-                    <!-- inicio da sessao faq do menu lateral -->
-                      <div id="accordion">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h6 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                When i'll receive my tracking information?
-                              </button>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h6 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                When should i expect delivery?
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h6 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Who do I contact if haven't received my package?
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      
-                    <div class="card-body">
-                      <h5 class="card-title">Contact Customer Service</h5>
-                      
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-info">Go somewhere</a>
-                    </div>
-                  </div>
-                  
-
+            <!-- item timeline tracking inicio aqui -->
+            <li class="timeline-inverted info">
+              <div class="timeline-badge b-status"><i class="fas fa-check"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <!-- descrições do tracking -->
+                  <span class="badge float-right badge-status">Delivered</span>
+                  <h6 class="timeline-title"> <strong> 6000 AU </strong>
+                    <p>
+                      <small class="text-muted">
+                        Produto Recebido pelo Cliente
+                      </small>
+                    </p>
+                  </h6>
                 </div>
-              <!-- section menu menu-lateral termina aqui -->
+              </div>
+              <!-- descrição do tempo e data -->
+              <div class="timeline-time">
+                <h6><strong> 1:34 AM </strong></h6>
+                <p><small class="text-muted">Mon Feb 14 2019</small></p>
+              </div>
+            </li>
+            <!-- fim do item tracking -->
 
-              
-              
-              
+
+            <!-- item timeline tracking inicio aqui -->
+            <li class="timeline-inverted info">
+              <div class="timeline-badge b-status"><i class="fas fa-shipping-fast"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <!-- descrições do tracking -->
+                  <span class="badge float-right badge-status">In Transit</span>
+                  <h6 class="timeline-title"> <strong> Singapura </strong>
+                    <p>
+                      <small class="text-muted">
+                        Departed from local distribuitioin center
+                      </small>
+                    </p>
+                  </h6>
+                </div>
+              </div>
+              <!-- descrição do tempo e data -->
+              <div class="timeline-time">
+                <h6><strong> 1:34 AM </strong></h6>
+                <p><small class="text-muted">Mon Feb 14 2019</small></p>
+              </div>
+            </li>
+            <!-- fim do item tracking -->
+
+
+            <!-- item timeline tracking inicio aqui -->
+            <li class="timeline-inverted info">
+              <div class="timeline-badge b-status"><i class="fas fa-shipping-fast"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <!-- descrições do tracking -->
+                  <span class="badge float-right badge-status">In Transit</span>
+                  <h6 class="timeline-title"> <strong> Singapura </strong>
+                    <p>
+                      <small class="text-muted">
+                        Departed from local distribuitioin center
+                      </small>
+                    </p>
+                  </h6>
+                </div>
+              </div>
+              <!-- descrição do tempo e data -->
+              <div class="timeline-time">
+                <h6><strong> 1:34 AM </strong></h6>
+                <p><small class="text-muted">Mon Feb 14 2019</small></p>
+              </div>
+            </li>
+            <!-- fim do item tracking -->
+
+
+            <!-- item timeline tracking inicio aqui -->
+            <li class="timeline-inverted warning">
+              <div class="timeline-badge b-status"><i class="fas fa-box-open"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="badge float-right badge-status">Order Waiting</span>
+                  <h6 class="timeline-title">
+                    <strong> Much Text Test </strong>
+                    <span>
+                      <small class="text-muted">
+                        Cras nibh nibh, tincidunt in purus sed, dapibus bibendum risus. Nullam efficitur elit nec
+                        lacinia vestibulum. In a convallis ipsum. Vivamus pellentesque, nisi at consectetur mollis,
+                        tortor felis aliquet sapien, non fermentum velit nisl vitae mi. Donec dignissim laoreet purus
+                        vel placerat. Donec eu euismod lectus. In at aliquam ipsum.
+                      </small>
+                    </span>
+                  </h6>
+                </div>
+              </div>
+              <!-- descrição do tempo e data -->
+              <div class="timeline-time">
+                <h6><strong> 8:39 AM </strong></h6>
+                <p><small class="text-muted">Mon Feb 13 2019</small></p>
+              </div>
+            </li>
+            <!-- fim do item tracking -->
+
+
+            <!-- item timeline tracking inicio aqui -->
+            <li class="timeline-inverted info">
+              <div class="timeline-badge b-status"><i class="fas fa-box"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <!-- descrições do tracking -->
+                  <span class="badge float-right badge-status">Processing Order</span>
+                  <h6 class="timeline-title"> <strong> Order Received </strong>
+                    <p>
+                      <small class="text-muted">
+                        Your order has been processed and tracking will be updated soon
+                      </small>
+                    </p>
+                  </h6>
+                </div>
+              </div>
+              <!-- descrição do tempo e data -->
+              <div class="timeline-time">
+                <h6><strong> 8:32 AM </strong></h6>
+                <p><small class="text-muted">Mon Feb 13 2019</small></p>
+              </div>
+            </li>
+            <!-- fim do item tracking -->
+
+          </ul>
+          <!-- END OF TRACKING TIMELINE -->
+          <!-- painel do tracking termina aqui -->
+        </div>
+
+
+        <!-- barra menu menu-lateral -->
+        <div id="menu-lateral" class="col-md-4 col-sm-12">
+
+          <div class="card mb-5">
+            <div class="card-header">
+              <div class="container">
+
+                <!-- buttons menu lateral -->
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-outline-secondary">1</button>
+                  <button type="button" class="btn btn-outline-secondary">2</button>
+                  <button type="button" class="btn btn-outline-secondary">3</button>
+                  <button type="button" class="btn btn-outline-secondary">4</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Elemento lateral</h5>
+              <p class="card-text">With supporting text description to additional content information.</p>
+
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">E-commerce <i class="fas fa-info-circle"></i>
+                  <p><small class="text-muted">287765465110023123402 </small></p>
+                </li>
+
+                <li class="list-group-item">Customer Confirmation <i class="fas fa-info-circle"></i>
+                  <p><small class="text-muted">MYCFF-09837462823800</small></p>
+                </li>
+
+                <li class="list-group-item">Deliver by Postal Provider <i class="fas fa-info-circle"></i>
+                  <p><small class="text-muted">LW7462823800</small></p>
+                </li>
+
+                <li class="list-group-item">Weight <i class="fas fa-info-circle"></i>
+                  <p><small class="text-muted">1.16 Lbs</small></p>
+                </li>
+
+                <li class="list-group-item">Service <i class="fas fa-info-circle"></i>
+                  <p><small class="text-muted">GM Service Plus</small></p>
+                </li>
+
+              </ul>
+
             </div>
           </div>
-        
-        
-        <!-- footer inicia aqui -->
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-          <div class="row">
-            <div class="col-12 col-md">
-              <a class="navbar-brand" href="#">LOGO Here</a>
-              <small class="d-block mb-3 text-muted">© 2019-2020</small>
+          <!-- fim da sessao um do menu lateral -->
+
+
+
+
+          <!-- sessao 3 do menu lateral -->
+          <div class="card mb-5">
+            <div class="card-header">
+              <i class="fas fa-question float-right mt-1"></i> <strong> FAQ </strong>
             </div>
-            <div class="col-6 col-md">
-              <h5>Features</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Cool stuff</a></li>
-                <li><a class="text-muted" href="#">Random feature</a></li>
-                <li><a class="text-muted" href="#">Team feature</a></li>
-                <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                <li><a class="text-muted" href="#">Another one</a></li>
-                <li><a class="text-muted" href="#">Last time</a></li>
-              </ul>
+            <!-- inicio da sessao faq do menu lateral -->
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      When i'll receive my tracking information?
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      When should i expect delivery?
+                    </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h6 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Who do I contact if haven't received my package?
+                    </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-6 col-md">
-              <h5>Resources</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Resource</a></li>
-                <li><a class="text-muted" href="#">Resource name</a></li>
-                <li><a class="text-muted" href="#">Another resource</a></li>
-                <li><a class="text-muted" href="#">Final resource</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>About</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Team</a></li>
-                <li><a class="text-muted" href="#">Locations</a></li>
-                <li><a class="text-muted" href="#">Privacy</a></li>
-                <li><a class="text-muted" href="#">Terms</a></li>
-              </ul>
+
+
+            <div class="card-body">
+              <h5 class="card-title">Contact Customer Service</h5>
+
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
             </div>
           </div>
-        </footer>
+
+        </div>
+        <!-- section menu menu-lateral termina aqui -->
+
       </div>
-        <!-- footer termina aqui -->
-    <!-- fim do container -->
     </div>
-  </body>
+
+
+    <!-- footer inicia aqui -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <a class="navbar-brand" href="#">LOGO Here</a>
+          <small class="d-block mb-3 text-muted">© 2019-2020</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer termina aqui -->
+  <!-- fim do container -->
+  </div>
+</body>
+
 </html>
 <!-- FIM -->

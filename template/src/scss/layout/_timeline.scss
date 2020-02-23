@@ -1,4 +1,12 @@
 
+//descrição do transito
+h6 > small {
+    margin-left: 10px;
+}
+
+h6 p {
+    display: inline;
+}
 //time badge fix
 .timeline-heading p{
     margin-bottom: 5px;
@@ -26,7 +34,7 @@ left: 18.3%;
 margin-left: -1.5px;
 z-index: -1;
 }
-//
+
 .timeline:after{
     
     content: ' ';
@@ -42,7 +50,7 @@ z-index: -1;
     bottom:0;
     
 }
-//
+
 .timeline > li {
 position: relative;
 }
@@ -67,10 +75,7 @@ display: table;
 clear: both;
 }
 
-//descrição do transito
-h6 > small {
-    margin-left: 10px;
-}
+
 //
 .timeline-heading{
     color:$cinza;
@@ -135,8 +140,7 @@ border-bottom: 14px solid transparent;
 content: " ";
 }
 
-//
-//
+
 
 .timeline > li > .timeline-badge {
     color: #fff;
@@ -158,6 +162,8 @@ content: " ";
     
     .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
+    margin-bottom:20px
+
     }
     
     .timeline > li.timeline-inverted > .timeline-panel:before {
