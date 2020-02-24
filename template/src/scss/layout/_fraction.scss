@@ -1,4 +1,11 @@
 //
+footer a, nav a{
+  color: $cinza-escuro!important;
+  &:hover{
+    text-decoration: none!important;
+    color: $azul-claro!important;
+  }
+}
 //navbar correção na sobreposição do dropdown
 .navbar{
     z-index: 9999;

@@ -30,11 +30,11 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="enroute.html">En Route</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="warning.html">Warning</a>
           </li>
 
@@ -42,7 +42,6 @@
             <a class="nav-link" href="danger.html">Danger</a>
           </li>
 
-          
           <!-- dropdown menu começa aqui -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -102,20 +101,20 @@
             
 
             <!-- NOTIFICAÇÃO DE ALERTA -->
-            <!-- <div class="alert alert-danger " role="alert">
+            <div class="alert alert-warning " role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
               <strong>Any Notification!</strong> You should check in on some of those fields below.
-            </div> -->
+            </div>
             <!-- NOTIFICAÇÃO DE ALERTA -->
 
 
             <!-- CARD GRANDE DE STATUS -->
-            <div class="card text-white bg-info">
+            <div class="card text-white bg-warning">
               <div class="card-header">
 
-                <h2 class="card-title"><i class="fas fa-shipping-fast"></i> <strong> On Delivery Route </strong></h2>
+                <h2 class="card-title"><i class="fas fa-exclamation-triangle"></i> <strong> Some Problem on deliver </strong></h2>
                 <p class="card-subtitle"><small> Processed  </small></p>
                 <p class="card-text mb-1"> Tue, January 30, 2020 at 10:40 AM </p>
 
@@ -140,19 +139,17 @@
           <!-- TRACKING TIMELINE -->
           <ul class="timeline">
 
-
-
             <!-- item timeline tracking inicio aqui -->
-            <li class="timeline-inverted info">
-              <div class="timeline-badge b-status"><i class="fas fa-shipping-fast"></i></div>
+            <li class="timeline-inverted warning">
+              <div class="timeline-badge b-status"><i class="fas fa-exclamation-circle"></i></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <!-- descrições do tracking -->
-                  <span class="badge float-right badge-status">In Transit</span>
-                  <h6 class="timeline-title"> <strong> Singapura </strong>
+                  <span class="badge float-right badge-status">Please check the informations for delivery</span>
+                  <h6 class="timeline-title"> <strong> 6000 AU </strong>
                     <p>
                       <small class="text-muted">
-                        Departed from local distribuitioin center
+                        Need confirm the address
                       </small>
                     </p>
                   </h6>
@@ -257,8 +254,8 @@
             <div class="card-header">
               <div class="container">
 
-                 <!-- buttons menu lateral -->
-                 <div class="d-flex justify-content-between">
+                <!-- buttons menu lateral -->
+                <div class="d-flex justify-content-between">
                   <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-search"></i> </button>
                   <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-print"></i> </button>
                   <button type="button" class="btn btn-outline-secondary"> <i class="far fa-file-alt"></i> </button>

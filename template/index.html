@@ -35,7 +35,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="warning.html">Warning</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="danger.html">Danger</a>
           </li>
 
           <!-- dropdown menu começa aqui -->
@@ -60,7 +64,7 @@
         <!-- form de busca -->
         <form class="form-inline my-2 my-lg-0 ml-5">
           <input class="form-control mr-sm-2" type="search" placeholder="Track Another Code" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
         <!-- fim do form de busca -->
 
@@ -76,7 +80,7 @@
 <body>
 
   <!-- INICIO DO MENU DE ATIVIDADE -->
-  <div class="container-fluid bg-success sticky-top sombra faixa-atividade">
+  <div class="container-fluid bg-secondary sticky-top sombra faixa-atividade">
     <div class="container">
       <!-- codigo de rastreamento -->
       <div class="container-fluid text-white">
@@ -100,14 +104,16 @@
               <div class="card-header">
 
                 <h2 class="card-title"><i class="far fa-check-circle"></i> <strong> Delivered </strong></h2>
-                <h6 class="card-subtitle">Tue, January 30, 2020 at 10:40 AM</h6>
-                <p class="card-text mb-3">6000 AU</p>
+                <p class="card-subtitle"><small> Tue, January 30, 2020 at 10:40 AM </small></p>
+                <p class="card-text mb-1">6000 AU</p>
 
               </div>
 
               <ul class="list-group list-group-flush">
+                <small>
                 <li class="list-group-item"><strong> From: </strong>Pettaling Jaya, KUL 46200, Malasya</li>
                 <li class="list-group-item"><strong> To: </strong> Perth, WA 6000, Australia</li>
+                </small>
               </ul>
 
             </div>
@@ -235,16 +241,16 @@
 
                 <!-- buttons menu lateral -->
                 <div class="d-flex justify-content-between">
-                  <button type="button" class="btn btn-outline-secondary">1</button>
-                  <button type="button" class="btn btn-outline-secondary">2</button>
-                  <button type="button" class="btn btn-outline-secondary">3</button>
-                  <button type="button" class="btn btn-outline-secondary">4</button>
+                  <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-search"></i> </button>
+                  <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-print"></i> </button>
+                  <button type="button" class="btn btn-outline-secondary"> <i class="far fa-file-alt"></i> </button>
+                  <button type="button" class="btn btn-outline-secondary"> <i class="far fa-question-circle"></i> </button>
                 </div>
 
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Elemento lateral</h5>
+              <h5 class="card-title"><strong> Elemento lateral </strong></h5>
               <p class="card-text">With supporting text description to additional content information.</p>
 
               <ul class="list-group list-group-flush">

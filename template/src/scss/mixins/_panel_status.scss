@@ -6,14 +6,13 @@
     
     &:hover{
         opacity: 1;
-        cursor: help;
         @include status-panel($cor);
     }
     &:first-child{
         opacity: 1;
-        cursor: pointer;
         @include status-panel($cor);
     }
+    cursor: pointer;
 }
 /* TIMELINE STATUS PANEL ATIVO*/
 @mixin status-panel($cor){
@@ -33,12 +32,14 @@
     // cor de status do icone
     .timeline-badge.b-status {
         background-color: $cor!important;
+        cursor: help;
     }
     // cor de status do badge a direita
     .timeline-panel > .timeline-heading > .badge-status {
         color: #fff!important;
         background-color: $cor!important; 
         border: 1px solid $cor!important;
+        cursor: help;
     }
     // cor da fonte do tempo a esquerda
     .timeline-time{

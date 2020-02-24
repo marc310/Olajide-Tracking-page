@@ -19,3 +19,6 @@
 .card-header > h6 > button:hover, .card-header > h6 > button:focus{
     text-decoration: none!important;
 }
+#menu-lateral > .card > .card-header, .card-body, .card-header > h6 > .btn-link{
+    color:$cinza
+}
