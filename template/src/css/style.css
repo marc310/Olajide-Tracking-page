@@ -42,6 +42,12 @@ footer a, nav a {
     text-decoration: none !important;
     color: #22a7f0 !important; }
 
+h6 > small {
+  margin-left: 10px; }
+
+h6 p {
+  display: inline; }
+
 .navbar {
   z-index: 9999; }
 
@@ -62,12 +68,6 @@ footer a, nav a {
     box-shadow: 4px 6px 25px rgba(36, 36, 36, 0.3); }
 
 /* TRACKING TIMELINE */
-h6 > small {
-  margin-left: 10px; }
-
-h6 p {
-  display: inline; }
-
 .timeline-heading p {
   margin-bottom: 5px; }
 

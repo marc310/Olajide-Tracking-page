@@ -6,6 +6,15 @@ footer a, nav a{
     color: $azul-claro!important;
   }
 }
+
+h6 > small {
+  margin-left: 10px;
+}
+
+h6 p {
+  display: inline;
+}
+//
 //navbar correção na sobreposição do dropdown
 .navbar{
     z-index: 9999;
